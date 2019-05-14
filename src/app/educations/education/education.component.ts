@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-education',
   template: `
   <div class="col l7 offset-l4 m8 offset-m2 s10 offset-s1 exp">
-    <div class="company">{{ education.name }} | {{ education.place }}</div>
+    <div class="company">{{ education.school }} | {{ education.place }}</div>
     <div class="date">{{ education.date }}</div>
     <div class="description">{{ education.description }}</div>
   </div>
