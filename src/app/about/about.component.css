@@ -1,0 +1,87 @@
+.full{
+    height: 100%;
+}
+.mainDiv{
+    display: flex;
+    width:100%;
+    height:100%;
+    padding: 0;
+    position: relative;
+    flex-direction: column;
+}
+.image-div{
+    margin:20px auto;
+    display: flex;
+    align-items: center;
+}
+.profile{
+    border-radius:50%;
+    width:100px;
+    text-align: center;
+    background-color: #2cc19c;
+    height:100px;
+    box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.1);
+}
+.info{
+    margin:0 auto;
+}
+.name{
+    margin:0 auto;
+    font-size:25px;
+    font-weight:bold;
+}
+.social-icons{
+    display: flex;
+    color: #2cc19c;
+    justify-content: center;
+}
+.icon-link{
+    cursor: pointer;
+    color: black !important;
+}
+.icon-social{
+    margin-left:5px;
+    margin-right:5px;
+}
+.icon-link:hover{
+    color:#FA292A !important;
+}
+.occupation{
+    margin:0 auto;
+    margin-bottom:10px;
+    color:#2d16ff;
+    font-weight: bold;
+    font-size:14px;
+}
+.location{
+    margin:10px auto;
+    font-weight: bold;
+    text-align: center;
+}
+.about-me-header{
+    padding:10px;
+    font-weight: bold;
+    font-size:20px;
+}
+.about-me{
+    padding:10px;
+    font-size:13px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.download{
+    color:black;
+    font-weight: bold;
+}
+.download:hover{
+    color:#FA292A;
+}
+.download:focus{
+    color:#FA292A
+}
+.download-cv{
+    margin:20px auto;
+    margin-top:60px;
+    padding:5px;
+}
