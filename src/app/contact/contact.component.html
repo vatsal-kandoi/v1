@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col s12">
-      <form>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
         <div class="row">
             <div class="col l6 m8 offset-m2 s12" style="padding:10px;">
                 <div class="row">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s10 offset-s1 l6 offset-l3 m8 offset-m2 btn">Submit </div>
+            <button type="submit" [disabled]="!f.valid" class="col s10 offset-s1 l6 offset-l3 m8 offset-m2 btn" >{{ formValue }} </button>
         </div>
       </form>
   </div>

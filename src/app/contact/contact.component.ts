@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -16,10 +17,16 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
-
+  @ViewChild('f') form: NgForm;
+  formValue: string;
+  constructor() {
+    this.formValue = 'Submit';
+  }
   ngOnInit() {
+  }
+  onSubmit(form: NgForm) {
+    const value = form.value;
+    this.formValue = 'Service unavailable.';
   }
 
 }
