@@ -34,7 +34,7 @@ import { Component, OnInit, Input } from '@angular/core';
   `]
 })
 export class ProjectComponent implements OnInit {
-  @Input() experience: {name: string, org: string, date: string, tech: string, description: string };
+  @Input() project: {name: string, org: string, date: string, tech: string, description: string };
   constructor() { }
 
   ngOnInit() {

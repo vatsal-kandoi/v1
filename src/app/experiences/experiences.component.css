@@ -9,6 +9,7 @@
     flex-direction: column;
 }
 .circle{
+    cursor: pointer;
     width:10px;
     margin:5px auto;
     height:10px;

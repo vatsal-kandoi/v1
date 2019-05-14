@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-experiences',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   <div class="row fullHeight noPadding">
     <div class="fullHeight col s12 navigator">
       <div class="row">
-        <app-experience></app-experience>
+        <app-experience [experience]="currentDisplay"></app-experience>
       </div>
-      <div class="nav-circles" *ngFor="let experience of experiences">
-        <div class="item"><div class="circle active"></div><div class="date">{{ experience.date }}</div></div>
+      <div class="nav-circles">
+        <div class="item" *ngFor="let experience of experiences">
+        <div class="circle" [ngClass]="{active: experience === currentDisplay }" (click)="onNavChange(experience)"></div>
+        <div class="date">{{ experience.date }}</div></div>
       </div>
     </div>
   </div>
@@ -25,9 +27,14 @@ export class ExperiencesComponent implements OnInit {
     Ipsa illo laborum eveniet amet sed in fuga dolores laboriosam,quaerat
     magni molestias sunt deserunt esse ut quam tempora quo, voluptate excepturi.`
   }];
-  constructor() { }
-
-  ngOnInit() {
+  currentDisplay: { company: string, place: string, date: string, description: string };
+  constructor() {
   }
 
+  ngOnInit() {
+    this.currentDisplay = this.experiences[0];
+  }
+  onNavChange(data: { company: string, place: string, date: string, description: string }) {
+    this.currentDisplay = data;
+  }
 }

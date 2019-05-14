@@ -14,7 +14,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skills/skill/skill.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
