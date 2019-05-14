@@ -7,13 +7,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .main-component{
     position: relative;
     height: 300px;
     background-color: white;
 }
-
 .nav-bar-vert{
     position: absolute;
     display: flex;
@@ -50,4 +50,25 @@
 }
 .active{
     color:#2cc19c;
+}
+.toggle-btn{
+    position: absolute;
+    top:10%;
+    right:0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+.toggle-btn:hover{
+    color:#FA292A;
+}
+.background{
+    background-image: linear-gradient(to bottom right, #2cc19c, #7fffbf);
+    background-color:#2cc19c;
+    height: 100vh;
+    width: 100%;
 }

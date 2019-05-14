@@ -12,15 +12,18 @@ import { Component, OnInit, Input } from '@angular/core';
       .skill{
         display:flex;
         flex-direction:row;
+        color:inherit;
       }
       .skill-icon{
         margin-right:5px;
         padding:10px;
+        color:inherit;
       }
       .skill-name{
         padding:15px;
         font-weight:bold;
         font-size:14px;
+        color:inherit;
       }
       .skill:hover{
         color:#FA292A
