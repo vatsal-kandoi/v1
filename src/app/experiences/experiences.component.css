@@ -1,9 +1,6 @@
 .navigator{
     position: relative;
 }
-.navigator-dark{
-    color: white
-}
 .nav-circles{
     position: absolute;
     top:calc(50% - 30px);

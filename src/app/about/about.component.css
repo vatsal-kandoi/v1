@@ -30,25 +30,18 @@
     font-size:25px;
     font-weight:bold;
 }
-.name-dark{
-    color:white;
-}
 .social-icons{
     display: flex;
-    color: #2c302f;
+    color: #2cc19c;
     justify-content: center;
-}
-.social-icons-dark{
-    color: white;
 }
 .icon-link{
     cursor: pointer;
-    color: inherit;
+    color: black !important;
 }
 .icon-social{
     margin-left:5px;
     margin-right:5px;
-    color: inherit;
 }
 .icon-link:hover{
     color:#FA292A !important;
@@ -60,16 +53,10 @@
     font-weight: bold;
     font-size:14px;
 }
-.occupation-dark{
-    color:#43c732
-}
 .location{
     margin:10px auto;
     font-weight: bold;
     text-align: center;
-}
-.location-dark{
-    color: white;
 }
 .about-me-header{
     padding:10px;
@@ -97,22 +84,4 @@
     margin:20px auto;
     margin-top:60px;
     padding:5px;
-}
-.separator{
-    border-right:2px solid #2cc19c;
-}
-.separator-dark{
-    border-right:2px solid #2c302f;
-}
-.separator-left{
-    border-left:2px solid #2cc19c;
-}
-.separator-left-dark{
-    border-left:2px solid #2c302f;
-}
-.color{
-    color: white;
-}
-.download-dark{
-    color: white;
 }
