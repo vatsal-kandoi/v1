@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkmodeService } from '../shared/darkmode.service';
 
 @Component({
   selector: 'app-skills',
   template: `
-  <div class="conatainer">
+  <div class="">
     <div class="row skills-div">
-      <div class="col s6" *ngFor="let skill of skills">
+      <div class="col s6" *ngFor="let skill of skills" [ngClass]="{'skills-div-dark':darkMode}">
         <app-skill [skill]="skill"></app-skill>
       </div>
     </div>
@@ -16,10 +17,13 @@ import { Component, OnInit } from '@angular/core';
     .skills-div{
       padding:40px;
     }
+    .skills-div-dark{
+      color:white;
+    }
     `
   ]
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
   skills = [ {
     link: 'angular',
     name: 'Angular'
@@ -43,9 +47,21 @@ export class SkillsComponent implements OnInit {
     name: 'CSS'
   }
    ];
-  constructor() { }
-
-  ngOnInit() {
-  }
+   darkMode: boolean;
+   subscription: any;
+   constructor(private darkModeService: DarkmodeService) {
+     this.darkModeService = darkModeService;
+     this.darkMode = this.darkModeService.getMode();
+     this.subscription = darkModeService.modeChange.subscribe((value) => {
+       this.darkMode = value;
+     });
+   }
+   changeMode() {
+     this.darkModeService.toggleMode();
+   }
+ // tslint:disable-next-line: use-life-cycle-interface
+   ngOnDestroy() {
+     this.subscription.unsubscribe();
+   }
 
 }

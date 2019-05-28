@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkmodeService } from '../shared/darkmode.service';
 
 @Component({
   selector: 'app-educations',
   template: `
   <div class="row fullHeight noPadding">
-    <div class="fullHeight col s12 navigator">
+    <div class="fullHeight col s12 navigator" [ngClass]="{'navigator-dark':darkMode}">
       <div class="row">
         <app-education [education]="currentDisplay"></app-education>
       </div>
@@ -36,7 +37,19 @@ export class EducationsComponent implements OnInit {
     magni molestias sunt deserunt esse ut quam tempora quo, voluptate excepturi.`
   }];
   currentDisplay: { name: string, place: string, date: string, description: string };
-  constructor() {
+  darkMode: boolean;
+  subscription: any;
+
+  constructor(private darkModeService: DarkmodeService) {
+    this.darkModeService = darkModeService;
+    this.darkMode = this.darkModeService.getMode();
+    this.subscription = darkModeService.modeChange.subscribe((value) => {
+      this.darkMode = value;
+    });
+  }
+// tslint:disable-next-line: use-life-cycle-interface
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
   ngOnInit() {

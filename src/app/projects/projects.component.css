@@ -1,6 +1,9 @@
 .navigator{
     position: relative;
 }
+.navigator-dark{
+    color: white
+}
 .prev{
     position: absolute;
     top:calc(50% - 80px);
