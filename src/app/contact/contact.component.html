@@ -1,33 +1,23 @@
 <div class="row">
   <div class="col s12">
       <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-        <div class="row">
-            <div class="col l6 m8 offset-m2 s12" style="padding:10px;">
-                <div class="row">
-                    <div class="input-field col s10 offset-s1">
-                        <input id="name" type="text" class="validate">
-                        <label for="name">Name</label>
+        <div class="flex">
+            <div class="row">
+                <div class="col l5 s12 m10 offset-m1">
+                    <div class="row">
+                        <input type="text" class="input" [ngClass]="{'dark-input':darkMode}" placeholder="Enter name">
                     </div>
-                    <div class="input-field col s10 offset-s1">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
+                    <div class="row">
+                        <input text="email" class="input" [ngClass]="{'dark-input':darkMode}" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="col l6 offset-l1 s12 m10 offset-m1">
+                    <div class="row">
+                        <textarea class="textarea" [ngClass]="{'dark-textarea':darkMode}"></textarea>
                     </div>
                 </div>
             </div>
-            <div class="col l6 m8 offset-m2 s12" style="padding:10px;">
-                <div class="row">
-                    <div class="input-field col s11">
-                        <input id="subject" type="text" class="validate">
-                        <label for="subject">Suject</label>
-                    </div>
-
-                    <div class="input-field col s11">
-                        <textarea class="txtsize" id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Textarea</label>
-                    </div>
-                </div>
-            </div>
-            <button type="submit" [disabled]="!f.valid" class="col s10 offset-s1 l6 offset-l3 m8 offset-m2 btn" >{{ formValue }} </button>
+            <button class="col s12 btn btn-primary" [ngClass]="{'success':darkMode}" >{{ formValue }}</button>
         </div>
       </form>
   </div>

@@ -84,6 +84,7 @@
 .download{
     color:black;
     font-weight: bold;
+    cursor: pointer;
 }
 .download:hover{
     color:#FA292A;

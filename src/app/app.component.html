@@ -1,6 +1,6 @@
   <div class="background" [ngClass]="{'dark-background':darkMode}">
     <div class="shade centerIt">
-      <div class="change" (click)="change()"><i class="fas fa-cog"></i></div>
+      <div class="change tooltipped" (click)="change()" data-position="right" data-tooltip="Toggle mode"><i class="fas fa-cog"></i></div>
       <div class="container">
         <div class="row">
           <div class="col l8 offset-l2 m10 offset-m1 s12 main-component" [ngClass]="{'dark-main-component':darkMode}">
