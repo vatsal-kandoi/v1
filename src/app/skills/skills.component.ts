@@ -24,26 +24,23 @@ export class SkillsComponent implements OnInit {
     link: 'angular',
     name: 'Angular'
   }, {
-    link: 'angular',
-    name: 'Angular'
+    link: 'node',
+    name: 'Node.js'
   }, {
-    link: 'angular',
-    name: 'Angular'
+    link: 'python',
+    name: 'Python'
   }, {
-    link: 'angular',
-    name: 'Angular'
+    link: 'docker',
+    name: 'Docker'
+  } , {
+    link: 'js',
+    name: 'JavaScript'
   }, {
-    link: 'angular',
-    name: 'Angular'
+    link: 'html5',
+    name: 'HTML'
   }, {
-    link: 'angular',
-    name: 'Angular'
-  }, {
-    link: 'angular',
-    name: 'Angular'
-  }, {
-    link: 'angular',
-    name: 'Angular'
+    link: 'css3-alt',
+    name: 'CSS'
   }
    ];
   constructor() { }
