@@ -28,13 +28,6 @@
 .dark-nav-bar-vert{
     background-color: #2cc133;
 }
-@media only screen and (max-width:600px){
-    .nav-bar-vert{
-        top:-60px;
-        left:0px;
-        flex-direction: row;
-    }
-}
 .nav-item-block{
     height: 50px;
     display: flex;
@@ -86,7 +79,7 @@
     height: 30px;
     background-color: white;
     position: absolute;
-    top:100px;
+    bottom:100px;
     right:0px;
     z-index: 1;
     display: flex;
@@ -95,4 +88,20 @@
 }
 .change:hover{
     color:#FA292A;
+}
+@media only screen and (max-width:600px){
+    .nav-bar-vert{
+        position: fixed;
+        top:0px;
+        left:calc( 50% - 150px);
+        flex-direction: row;
+    }
+    .main-component{
+        height: 100%;
+    }
+    .change{
+        position: fixed;
+        bottom:10px !important;
+        right: 10px;
+    }
 }

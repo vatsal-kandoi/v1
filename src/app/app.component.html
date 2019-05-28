@@ -7,7 +7,8 @@
             <router-outlet></router-outlet>
             <!-- Aria marks this as a navbar --> 
             <div role="navigation" aria-label="Main navigation" class="nav-bar-vert" [ngClass]="{'dark-nav-bar-vert':darkMode}">
-              <div *ngIf="!darkMode else dark">
+              <div *ngIf="!darkMode then light else dark"></div>
+              <ng-template #light>
                   <div class="nav-item-block" role="none">
                       <!-- Add exact else active all the times. -->
                     <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/' [routerLinkActiveOptions]="{exact: true}" ><i class="fas fa-info"></i></a>
@@ -27,7 +28,7 @@
                     <div class="nav-item-block" role="none">
                       <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/contact'><i class="fas fa-envelope"></i></a>
                     </div>
-              </div>
+              </ng-template>
               <ng-template #dark>
                   <div class="nav-item-block" role="none">
                       <!-- Add exact else active all the times. -->
