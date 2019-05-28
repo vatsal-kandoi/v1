@@ -25,7 +25,7 @@
     background-color: white;
     left:-55px;
 }
-.nav-bar-vert{
+.dark-nav-bar-vert{
     background-color: #2cc133;
 }
 @media only screen and (max-width:600px){
@@ -60,6 +60,7 @@
 
 .dark-nostyle{
     color:white;
+    outline: 0;
 }
 .dark-nostyle:hover{
     color:#FA292A

@@ -1,31 +1,54 @@
-  <div class="background" >
+  <div class="background" [ngClass]="{'dark-background':darkMode}">
     <div class="shade centerIt">
-      <div class="change"><i class="fas fa-cog"></i></div>
+      <div class="change" (click)="change()"><i class="fas fa-cog"></i></div>
       <div class="container">
         <div class="row">
-          <div class="col l8 offset-l2 m10 offset-m1 s12 main-component">
+          <div class="col l8 offset-l2 m10 offset-m1 s12 main-component" [ngClass]="{'dark-main-component':darkMode}">
             <router-outlet></router-outlet>
             <!-- Aria marks this as a navbar --> 
-            <div role="navigation" aria-label="Main navigation" class="nav-bar-vert">
-              <div class="nav-item-block" role="none">
-                <!-- Add exact else active all the times. -->
-                <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active" routerLink='/' [routerLinkActiveOptions]="{exact: true}" ><i class="fas fa-info"></i></a>
+            <div role="navigation" aria-label="Main navigation" class="nav-bar-vert" [ngClass]="{'dark-nav-bar-vert':darkMode}">
+              <div *ngIf="!darkMode else dark">
+                  <div class="nav-item-block" role="none">
+                      <!-- Add exact else active all the times. -->
+                    <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/' [routerLinkActiveOptions]="{exact: true}" ><i class="fas fa-info"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/experiences'><i class="fas fa-briefcase"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/projects'><i class="fas fa-pen"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/educations'><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                          <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/skills'><i class="fas fa-book-open"></i></a>
+                        </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="nostyle" routerLinkActive="active"routerLink='/contact'><i class="fas fa-envelope"></i></a>
+                    </div>
               </div>
-              <div class="nav-item-block" role="none">
-                <a role="menuitem" aria-haspopup="false" class="nostyle"  routerLinkActive="active" routerLink='/experiences'><i class="fas fa-briefcase"></i></a>
-              </div>
-              <div class="nav-item-block" role="none">
-                <a role="menuitem" aria-haspopup="false" class="nostyle"  routerLinkActive="active" routerLink='/projects'><i class="fas fa-pen"></i></a>
-              </div>
-              <div class="nav-item-block" role="none">
-                <a role="menuitem" aria-haspopup="false" class="nostyle"  routerLinkActive="active" routerLink='/educations'><i class="fas fa-graduation-cap"></i></a>
-              </div>
-              <div class="nav-item-block" role="none">
-                    <a role="menuitem" aria-haspopup="false" class="nostyle"  routerLinkActive="active" routerLink='/skills'><i class="fas fa-book-open"></i></a>
-                  </div>
-              <div class="nav-item-block" role="none">
-                <a role="menuitem" aria-haspopup="false" class="nostyle"  routerLinkActive="active" routerLink='/contact'><i class="fas fa-envelope"></i></a>
-              </div>              
+              <ng-template #dark>
+                  <div class="nav-item-block" role="none">
+                      <!-- Add exact else active all the times. -->
+                    <a role="menuitem" aria-haspopup="false" class="dark-nostyle" routerLinkActive="dark-active" routerLink='/' [routerLinkActiveOptions]="{exact: true}" ><i class="fas fa-info"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="dark-nostyle" routerLinkActive="dark-active" routerLink='/experiences'><i class="fas fa-briefcase"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="dark-nostyle" routerLinkActive="dark-active"routerLink='/projects'><i class="fas fa-pen"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="dark-nostyle" routerLinkActive="dark-active"routerLink='/educations'><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                    <div class="nav-item-block" role="none">
+                          <a role="menuitem" aria-haspopup="false" class="dark-nostyle" routerLinkActive="dark-active"routerLink='/skills'><i class="fas fa-book-open"></i></a>
+                        </div>
+                    <div class="nav-item-block" role="none">
+                      <a role="menuitem" aria-haspopup="false" class="dark-nostyle" routerLinkActive="dark-active"routerLink='/contact'><i class="fas fa-envelope"></i></a>
+                    </div>
+              </ng-template>              
             </div>
           </div>
         </div>

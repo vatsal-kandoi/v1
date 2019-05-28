@@ -1,6 +1,9 @@
 .navigator{
     position: relative;
 }
+.dark-navigator{
+    color: white;
+}
 .nav-circles{
     position: absolute;
     top:calc(50% - 30px);
@@ -15,6 +18,9 @@
     cursor: pointer;
     border-radius: 50%;
     background-color:#2cc19c;
+}
+.dark-circle{
+    background-color: #2cc12c
 }
 .fullHeight{
     height: 100%;

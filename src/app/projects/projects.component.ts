@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { DarkmodeService } from '../shared/darkmode.service';
 
 @Component({
   selector: 'app-projects',
   template: `
   <div class="row fullHeight noPadding">
-    <div class="fullHeight col s12 navigator">
+    <div class="fullHeight col s12 navigator" [ngClass]="{'dark-navigator':darkMode}">
       <div class="row">
         <app-project [project]="currentDisplay"></app-project>
       </div>
@@ -12,7 +13,8 @@ import { Component, OnInit } from '@angular/core';
       <div class="next"><i class="fas fa-chevron-down"></i></div>
       <div class="nav-circles">
         <div class="item" *ngFor="let project of projects">
-        <div class="circle"  [ngClass]="{active: project === currentDisplay }" (click)="onNavChange(project)" ></div>
+        <div class="circle"  [ngClass]="{active: project === currentDisplay,
+          'dark-circle':darkMode }" (click)="onNavChange(project)" ></div>
         <div class="date">{{ project.tech }}</div></div>
       </div>
     </div>
@@ -20,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, OnDestroy {
   projects = [{
     name: 'Lakshmipat Singhania Academy',
     org: 'Kolkata',
@@ -32,7 +34,17 @@ export class ProjectsComponent implements OnInit {
   }];
 
   currentDisplay: { name: string, tech: string, org: string, date: string, description: string };
-  constructor() {
+  darkMode: boolean;
+  subscription: any;
+  constructor(private darkModeService: DarkmodeService) {
+    this.darkMode = darkModeService.getMode();
+    this.subscription = darkModeService.modeChange.subscribe((value) => {
+      this.darkMode = value;
+    });
+    this.darkModeService = darkModeService;
+  }
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
   ngOnInit() {

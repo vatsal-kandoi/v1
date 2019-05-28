@@ -32,12 +32,12 @@
 }
 .social-icons{
     display: flex;
-    color: #2cc19c;
+    color: #3e4644;
     justify-content: center;
 }
 .icon-link{
     cursor: pointer;
-    color: black !important;
+    color: inherit;
 }
 .icon-social{
     margin-left:5px;
@@ -45,6 +45,9 @@
 }
 .icon-link:hover{
     color:#FA292A !important;
+}
+.dark-occupation{
+    color:#45c12c !important;
 }
 .occupation{
     margin:0 auto;
@@ -69,7 +72,15 @@
     text-align: justify;
     text-justify: inter-word;
 }
-
+.dark-info{
+    color: white;
+}
+.dark-social-icons{
+    color:white;
+}
+.dark-location{
+    color: white;
+}
 .download{
     color:black;
     font-weight: bold;
@@ -84,4 +95,22 @@
     margin:20px auto;
     margin-top:60px;
     padding:5px;
+}
+.dark-download{
+    color: white;
+}
+.separator-left{
+    border-right:2px solid #2cc19c;
+}
+.dark-separator-left{
+    border-right:2px solid #3e4644;
+}
+.separator-right{
+    border-left:2px solid #2cc19c;
+}
+.dark-separator-right{
+    border-left:2px solid #3e4644;
+}
+.color{
+    color: white;
 }

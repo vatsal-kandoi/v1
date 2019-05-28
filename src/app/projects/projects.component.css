@@ -1,6 +1,9 @@
 .navigator{
     position: relative;
 }
+.dark-navigator{
+    color: white;
+}
 .prev{
     position: absolute;
     top:calc(50% - 80px);
@@ -12,6 +15,9 @@
     top:calc(50% + 60px);
     left:20px;
     cursor: pointer;
+}
+.dark-circle{
+    background-color: #2cc12c
 }
 .prev:hover{
     color:#FA292A;
