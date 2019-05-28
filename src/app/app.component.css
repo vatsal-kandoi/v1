@@ -14,6 +14,9 @@
     height: 300px;
     background-color: white;
 }
+.dark-main-component{
+    background-color: #3e4644
+}
 .nav-bar-vert{
     position: absolute;
     display: flex;
@@ -21,6 +24,9 @@
     top:0;
     background-color: white;
     left:-55px;
+}
+.nav-bar-vert{
+    background-color: #2cc133;
 }
 @media only screen and (max-width:600px){
     .nav-bar-vert{
@@ -51,24 +57,41 @@
 .active{
     color:#2cc19c;
 }
-.toggle-btn{
-    position: absolute;
-    top:10%;
-    right:0;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:30px;
-    height:30px;
-    cursor: pointer;
+
+.dark-nostyle{
+    color:white;
 }
-.toggle-btn:hover{
-    color:#FA292A;
+.dark-nostyle:hover{
+    color:#FA292A
+}
+.dark-nostyle:focus{
+    color:#FA292A
+}
+.dark-active{
+    color: #FA292A;
 }
 .background{
     background-image: linear-gradient(to bottom right, #2cc19c, #7fffbf);
     background-color:#2cc19c;
     height: 100vh;
     width: 100%;
+}
+.dark-background{
+    background-image: linear-gradient(to bottom right, #272c2b, #2e3532);
+    background-color:#232726;
+}
+.change{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top:100px;
+    right:0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change:hover{
+    color:#FA292A;
 }
