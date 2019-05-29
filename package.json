@@ -11,7 +11,7 @@
     "launch": "npm run-script build:ssr && npm-script run serve:ssr",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
-    "build:ssr": "npm run-script build:client-and-server-bundles && npm run-script compile:server",
+    "build:ssr": "npm run-script compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run portfolio:server:production"
   },
   "private": true,
