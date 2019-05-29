@@ -10,7 +10,7 @@
     height: 100px;
     left: 10px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
     overflow: hidden;
 }
