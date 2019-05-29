@@ -4,9 +4,9 @@ import { DarkmodeService } from '../shared/darkmode.service';
 @Component({
   selector: 'app-skills',
   template: `
-  <div class="conatainer">
+  <div class="">
     <div class="row skills-div" [ngClass]="{'dark-skill':darkMode}">
-      <div class="col s6" *ngFor="let skill of skills">
+      <div class="col l6 m6 s12 flex" *ngFor="let skill of skills">
         <app-skill [skill]="skill"></app-skill>
       </div>
     </div>
@@ -19,6 +19,12 @@ import { DarkmodeService } from '../shared/darkmode.service';
     }
     .dark-skill{
       color:white;
+    }
+    @media only screen and (max-width: 600px){
+      .flex{
+        display:flex;
+        justify-content:center;
+      }
     }
     `
   ]

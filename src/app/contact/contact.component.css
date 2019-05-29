@@ -18,6 +18,12 @@
 .dark-input{
     color: white;
 }
+.dark-input::placeholder{
+  color: rgba(255,255,255,0.8)
+}
+input::placeholder{
+  color:rgba(0,0,0,0.8)
+}
 .dark-input:focus{
     border-bottom: 1px solid #37c43e;
 }
@@ -29,4 +35,9 @@
 }
 .success{
     background-color: #37c43e;
+}
+@media only screen and (max-width:1000px){
+  .textarea{
+    height:100px;
+  }
 }
