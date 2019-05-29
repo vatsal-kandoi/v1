@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DarkmodeService } from '../shared/darkmode.service';
 
 @Component({
@@ -16,7 +16,7 @@ import { DarkmodeService } from '../shared/darkmode.service';
       <div class="nav-circles">
         <div class="item">
         <div class="circle" [ngClass]="{'active': inViewExperience === currentDisplay,
-          'dark-circle':darkMode }" (click)="onNavChange(experience)"></div>
+          'dark-circle':darkMode }" (click)="onNavChange()"></div>
         <div class="date">{{ inViewExperience.date }}</div>
         </div>
       </div>
