@@ -31,6 +31,25 @@ import { Component, OnInit, Input } from '@angular/core';
   .exp{
       margin:20px;
   }
+  @media only screen and (max-width:600px){
+    .exp{
+      padding-bottom:100px;
+    }
+  }
+  @media only screen and (max-width:500px){
+    .exp{
+      padding-bottom:50px;
+    }
+    .company{
+      font-size:15px;
+    }
+    .date{
+      font-size:12px;
+    }
+    .description{
+      font-size:12px;
+    }
+  }
   `]
 })
 export class ProjectComponent implements OnInit {

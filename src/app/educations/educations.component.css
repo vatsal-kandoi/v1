@@ -4,12 +4,51 @@
 .dark-navigator{
     color: white;
 }
+
 .nav-circles{
     position: absolute;
-    top:calc(50% - 30px);
+    top:calc(50% - 50px);
+    height: 100px;
     left: 10px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+.prev{
+    width:30px;
+    height:30px;
+    outline: none;
+    border:none;
+    background-color: inherit;
+    z-index: 1;
+    position: absolute;
+    top:calc(50% - 80px);
+    left:20px;
+    cursor: pointer;
+}
+.dark-prev{
+    color:#2cc12c
+}
+.next{
+    width:30px;
+    height:30px;
+    outline: none;
+    border:none;
+    background-color: inherit;
+    z-index: 1;
+    position: absolute;
+    top:calc(50% + 60px);
+    left:20px;
+    cursor: pointer;
+}
+.dark-next{
+    color:#2cc12c
+}
+.prev:hover{
+    color:#FA292A;
+}
+.next:hover{
+    color:#FA292A;
 }
 .circle{
     width:10px;
@@ -42,4 +81,35 @@
 }
 .active{
     background-color: #FA292A;
+}
+@media only screen and (max-width:600px){
+    .nav-circles{
+        flex-direction: row;
+        top:calc(100% - 80px);
+        height: 80px;
+        width:200px;
+        left:calc(50% - 100px);
+    }
+    .item{
+        flex-direction: column-reverse;
+    }
+    .prev{
+        transform: rotate(-90deg);
+        position: absolute;
+        top:calc(100% - 40px);
+        left:calc(50% - 100px);
+        cursor: pointer;
+    }
+    .next{
+        transform: rotate(-90deg);
+        position: absolute;
+        top:calc(100% - 40px);
+        left:calc(50% + 90px);
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:400px){
+    .next{
+        left:calc(50% + 70px)
+    }
 }

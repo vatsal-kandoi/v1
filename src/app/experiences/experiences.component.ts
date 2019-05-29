@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { DarkmodeService } from '../shared/darkmode.service';
-import { currentId } from 'async_hooks';
 
 @Component({
   selector: 'app-experiences',
