@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "launch": "npm-script run serve:ssr",
+    "launch": "npm run-script serve:ssr",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run-script compile:server",
