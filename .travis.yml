@@ -18,6 +18,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/Portfolio
+  local_dir: dist/browser
   on:
     branch: master
