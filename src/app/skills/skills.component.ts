@@ -25,6 +25,9 @@ import { DarkmodeService } from '../shared/darkmode.service';
         display:flex;
         justify-content:center;
       }
+      .skills-div{
+        padding:20px;
+      }
     }
     `
   ]
