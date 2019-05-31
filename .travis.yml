@@ -13,6 +13,7 @@ before_script:
 
 script:
   - ng build --prod --base-href https://vatsal-kandoi.github.io/Portfolio/
+  - npm copy
 
 deploy:
   provider: pages
