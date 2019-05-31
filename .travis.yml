@@ -13,7 +13,7 @@ before_script:
 
 script:
   - ng build --prod --base-href https://vatsal-kandoi.github.io/Portfolio/
-
+  - npm run-script create
 deploy:
   provider: pages
   skip_cleanup: true
