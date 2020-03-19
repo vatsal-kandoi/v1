@@ -40,10 +40,4 @@
 .down-arrow:hover{
     transform: scale(1.2);
     color: #21d150;
-    transition-duration: 1s;
-    transition-property: all;
-    transition-timing-function: ease-out;
-}
-.button:hover{
-    background-color: green;
 }
