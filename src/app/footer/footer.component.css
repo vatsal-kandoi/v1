@@ -1,0 +1,89 @@
+.footer{
+    background-color: rgb(39, 39, 39);
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer-item{
+    width: 35%;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+.footer-social-item{
+    width: 35%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+.input{
+    width: 100% !important;
+}
+.footer-name{
+    color: #21d150 !important;
+}
+.resume{
+    color: #21d150;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.made{
+    margin-top: 80px;
+    color: white;
+}
+.green{
+    color: #21d150 !important; 
+}
+.button{
+    background-color: #21d150;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.social-icons{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #21d150;
+    width: 40%;
+}
+.social-text{
+    font-size: 1.5rem;
+    color: #21d150;
+}
+.icon{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 800px) {
+    .footer-item{
+        width: 60%;
+    }
+    .footer-social-item{
+        width: 60%;
+    }
+    .social-icons{
+        widows: 60%;
+    }
+}
+@media only screen and (max-width:550px) {
+    .footer-item{
+        width: 80%;
+    }
+    .footer-social-item{
+        width: 80%;
+    }
+    .social-icons{
+        widows: 80%;
+    }
+}
