@@ -10,14 +10,26 @@ import { RouterModule, Routes } from '@angular/router';
 import { WorksComponent } from './works/works.component';
 import { WorkComponent } from './works/work/work.component';
 import { OrganisationsComponent } from './works/organisations/organisations.component';
+import { EducationComponent } from './education/education.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 let appRoutes: Routes = [
   { path: '', component: WorksComponent },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
+  { path: '/projects',
+    pathMatch: 'full',
+    component: ProjectsComponent
   },
-  // { path: '**', component: PageNotFoundComponent }
+  { path: '/education',
+    pathMatch: 'full',
+    component: EducationComponent
+  },
+  { path: '/skills',
+    pathMatch: 'full',
+    component: SkillsComponent
+  },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -28,7 +40,10 @@ let appRoutes: Routes = [
     FooterComponent,
     WorksComponent,
     WorkComponent,
-    OrganisationsComponent
+    OrganisationsComponent,
+    EducationComponent,
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     RouterModule.forRoot(
