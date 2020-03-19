@@ -1,0 +1,44 @@
+.landing-page{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing-page-image{
+    height: 150px;
+}
+.landing-page-info{
+    font-weight: bold;
+    font-size:1.2rem;
+    max-width: 400px;
+    text-align: center;
+}
+.landing-page-name{
+    color: #21d150 !important;
+}
+.landing-btn-enclosure{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.button{
+    width: 150px;
+    background-color: #21d150;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 20px;
+}
+.down-arrow{
+    font-size: 4rem;
+    cursor: pointer;
+}
+.down-arrow:hover{
+    transform: scale(1.2);
+    color: #21d150;
+}
