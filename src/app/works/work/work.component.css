@@ -1,0 +1,123 @@
+.timeline{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline::after{
+    position: absolute;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #21d150;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+}
+.exp-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.circle{
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    z-index: 3;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    background-color: #21d150;
+    align-items: center;
+    justify-content: center;
+}
+.experience-enc{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.experience{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: left;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 1px 2px 2.5px 0.5px rgba(0,0,0,0.6);
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.experience-header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.company{
+    align-self: flex-start;
+    font-size: 1.5rem;
+    max-width: 60%;
+    color: black;
+}
+.position{
+    color: rgb(88, 88, 88);
+    width: 100%;
+    align-self: flex-start;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.position-info{
+    align-self: flex-start;
+}
+.date-exp{
+    display: none;
+    align-self: flex-end;
+}
+.experience:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.6);
+}
+@media only screen and (max-width:992px){
+    .date{
+        display: none !important;
+    }
+    .date-exp{
+        display: block !important;
+    }
+}
+@media only screen and (max-width:578px){
+    .experience{
+        width: 100% !important;
+    }
+    .circle{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:500px){
+    .position{
+        flex-direction: column;
+    }
+    .date-exp{
+        align-self: flex-start;
+    }
+}

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.container-fluid{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.header{
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    border-bottom-color: #21d150 !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 3px !important;
+}

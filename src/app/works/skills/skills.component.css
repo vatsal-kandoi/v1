@@ -1,0 +1,26 @@
+.info{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(236, 236, 236);   
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    box-shadow: 1px 2px 2.5px 0.5px rgba(0,0,0,0.6);
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+}
+.skill:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.6);
+}

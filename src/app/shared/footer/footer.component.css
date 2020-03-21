@@ -1,6 +1,5 @@
 .footer{
     background-color: rgb(39, 39, 39);
-    margin-top: 50px;
     padding-top: 30px;
     padding-bottom: 60px;
     display: flex;
@@ -32,6 +31,12 @@
     color: #21d150;
     margin-top: 50px;
     cursor: pointer;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+}
+.resume:hover{
+    color: rgb(81, 253, 81);
 }
 .made{
     margin-top: 80px;
@@ -45,8 +50,13 @@
     color: white;
     font-weight: bold;
     width: 100%;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-out;
 }
-
+.button:hover{
+    background-color: rgb(81, 253, 81);
+}
 .social-icons{
     margin-top: 30px;
     text-align: center;
