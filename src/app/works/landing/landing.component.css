@@ -34,7 +34,8 @@
     border-radius: 20px;
 }
 .down-arrow{
-    font-size: 4rem;
+    font-size: 2rem;
+    margin-top: 50px;
     cursor: pointer;
 }
 .down-arrow:hover{

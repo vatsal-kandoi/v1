@@ -1,7 +1,9 @@
-.footer{
+.footer-enc{
     background-color: rgb(39, 39, 39);
     padding-top: 30px;
     padding-bottom: 60px;
+}
+.footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -96,4 +98,15 @@
     .social-icons{
         widows: 80%;
     }
+}
+.up-arrow{
+    padding: 10px;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.icon:hover{
+    color: #21d150;
 }
