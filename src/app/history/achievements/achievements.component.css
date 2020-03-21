@@ -1,0 +1,71 @@
+.awards{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.award{
+    margin: 10px;
+    width: 250px;
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+}
+.award:hover{
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: #21d150;
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+}
+.date{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+}
+.name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 210px;
+}
+.for{
+    margin-left: 20px;
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+}
+.about{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 210px;
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    text-align: left;
+}
+.icons{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+.icon{
+    color: black !important;
+    margin: 5px;
+    cursor: pointer;
+}
+.icon:hover{
+    color: #21d150 !important;
+}

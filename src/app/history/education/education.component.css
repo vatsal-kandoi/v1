@@ -1,0 +1,58 @@
+.education-enc{
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+.education{
+    background-color: white;
+    box-shadow: 1px 2px 2.5px 1px rgba(0,0,0,0.3);
+    padding: 30px;
+    margin-top: 20px;
+}
+.education:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 4px 5px 2px rgba(0,0,0,0.3);
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.place{
+    justify-self: flex-start;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.name{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+.city{
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+}
+.date{
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+    justify-self: flex-end;
+}
+.degree{
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+    text-align: left;
+}
+.info{
+    margin-top: 15px;
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+    text-align: left;
+}
+@media only screen and (max-width: 570px){
+    .about{
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .date{
+        justify-self: flex-start;
+    }
+}

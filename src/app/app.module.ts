@@ -12,9 +12,13 @@ import { ProjectsComponent } from './works/projects/projects.component';
 import { AboutComponent } from './works/about/about.component';
 import { PlayComponent } from './play/play.component';
 import { SkillsComponent } from './works/skills/skills.component';
+import { AchievementsComponent } from './history/achievements/achievements.component';
+import { HistoryComponent } from './history/history.component';
+import { EducationComponent } from './history/education/education.component';
 
 @NgModule({
   declarations: [
+    EducationComponent,
     AppComponent,
     NavbarComponent,
     LandingComponent,
@@ -25,6 +29,8 @@ import { SkillsComponent } from './works/skills/skills.component';
     AboutComponent,
     PlayComponent,
     SkillsComponent,
+    AchievementsComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,
