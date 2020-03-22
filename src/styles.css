@@ -36,3 +36,427 @@
         font-size: 1.5rem;
     }
 }
+
+/***** Preloader ******/
+.preloader-enc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 60;
+}
+.preloader{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+}
+.finger{
+    width: 25px;
+    position: relative;
+    margin-left: 2px;
+    background-color: #21d150;
+    margin-right: 2px;
+    border-bottom-left-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+}
+.finger-1{
+    height: 70px;
+    margin-top: 20px;
+    animation: finger1 1.5s linear infinite;
+}
+.finger-2{
+    height: 80px;
+    margin-top: 15px;
+    animation: finger2 1.5s linear infinite;
+}
+.finger-3{
+    height: 95px;
+    margin-top: 5px;
+    animation: finger3 1.5s linear infinite;
+}
+.finger-4{
+    height: 85px;
+    margin-top: 10px;
+    animation: finger4 1.5s linear infinite;
+}
+.thumb-enc{
+    height: 80px;
+    width: 40px;
+    overflow: hidden;
+}
+.thumb{
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: 2px;
+    background-color: #21d150;
+    margin-right: 2px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    border-top-right-radius: 7.5px;
+    animation: thumb 1.5s linear infinite;
+}
+@keyframes thumb{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    35%{
+        transform: rotate(-12deg);
+    }
+    55%{
+        transform: rotate(0deg);
+    }    
+}
+.thumb::after{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    background-color: #21d150;
+    width: 25px;
+    top: -20px;
+    left: 0;
+    z-index: 1;
+    animation: thumbAfter 1.5s linear infinite;
+}
+@keyframes thumbAfter{
+    0%{
+        background-color: #21d150;
+    }
+    20%{
+        background-color: #21d150;
+    }
+    34%{
+        background-color: #21d150;
+    }
+    35%{
+        background-color: white;
+    }
+    54%{
+        background-color: white;
+    }
+    55%{
+        background-color: #21d150;
+    }    
+}
+.thumb::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    z-index: 2;
+    background-color: white;
+    width: 24.5px;
+    top: -20px;
+    right: 5px;
+    border-bottom-left-radius: 50%;
+}
+.finger-nail{
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+    height: 17px;
+    width: 15px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    animation: nail 1.5s linear infinite;
+}
+i{
+    position: absolute;
+    top:10px;
+    left:6.5px;
+    width: 12px;
+    height: 9px;
+    border-bottom-color: white;
+    border-bottom-width: 2.5px;
+    border-bottom-style: solid;
+    border-top-color: white;
+    border-top-width: 2.5px;
+    border-top-style: solid;
+}
+.crease-1{
+    animation: crease1 1.5s linear infinite;
+}
+.crease-2{
+    animation: crease2 1.5s linear infinite;
+}
+.crease-3{
+    animation: crease3 1.5s linear infinite;
+}
+.crease-4{
+    animation: crease4 1.5s linear infinite;
+}
+.nail-1{
+    animation-name: nail1;
+}
+.nail-2{
+    animation-name: nail2;
+}
+.nail-3{
+    animation-name: nail3;
+}
+.nail-4{
+    animation-name: nail4;
+}
+@keyframes nail1{
+    0%{
+        bottom: 4px;
+    }
+    25%{
+        bottom: 8px;
+    }
+    40%{
+        bottom: 4px;
+    }
+}
+@keyframes nail2{
+    0%{
+        bottom: 4px;
+    }
+    2%{
+        bottom: 4px;
+    }
+    27%{
+        bottom: 8px;
+    }
+    45%{
+        bottom: 4px;
+    }
+}
+@keyframes nail3{
+    0%{
+        bottom: 4px;
+    }
+    10%{
+        bottom: 4px;
+    }
+    30%{
+        bottom: 8px;
+    }
+    50%{
+        bottom: 4px;
+    }
+}
+@keyframes nail4{
+    0%{
+        bottom: 4px;
+    }
+    15%{
+        bottom: 4px;
+    }
+    35%{
+        bottom: 8px;
+    }
+    55%{
+        bottom: 4px;
+    }
+}
+
+@keyframes crease1{
+    0%{
+        top:10px;
+        height: 9px;
+    }
+    5%{
+        height: 7px;
+    }
+    10%{
+        height: 5px;
+    }
+    15%{
+        height: 3px;
+    }
+    20%{
+        height: 1px;
+    }
+    25%{
+        top: 6px;
+    }
+    40%{
+        top:10px;
+        height: 9px;
+    }
+}
+@keyframes crease2{
+    0%{
+        top:10px;
+        height: 9px;
+    }
+    2%{
+        top:10px;
+        height: 9px;
+    }
+    7%{
+        height: 7px;
+    }
+    12%{
+        height: 5px;
+    }
+    17%{
+        height: 3px;
+    }
+    22%{
+        height: 1px;
+    }
+    27%{
+        top: 6px;
+    }
+    45%{
+        top:10px;
+        height: 9px;
+    }
+}
+@keyframes crease3{
+    0%{
+        top:10px;
+        height: 9px;
+    }
+    10%{
+        top:10px;
+        height: 9px;
+    }
+    15%{
+        height: 5px;
+    }
+    20%{
+        height: 3px;
+    }
+    25%{
+        height: 1px;
+    }
+    30%{
+        top: 6px;
+    }
+    50%{
+        top:10px;
+        height: 9px;
+    }
+}
+@keyframes crease4{
+    0%{
+        top:10px;
+        height: 9px;
+    }
+    15%{
+        top:10px;
+        height: 9px;
+    }
+    20%{
+        height: 5px;
+    }
+    25%{
+        height: 3px;
+    }
+    30%{
+        height: 1px;
+    }
+    35%{
+        top: 6px;
+    }
+    55%{
+        top:10px;
+        height: 9px;
+    }
+}
+
+@keyframes finger1{
+    0%{
+        margin-top: 20px;
+    }
+    5%{
+        margin-top: 16px;
+    }
+    10%{
+        margin-top: 12px;
+    }
+    15%{
+        margin-top: 8px;
+    }
+    20%{
+        margin-top: 4px;
+    }
+    25%{
+        margin-top: 0px;
+    }
+    40%{
+        margin-top: 20px;
+    }
+}
+@keyframes finger2{
+    0%{
+        margin-top: 15px;
+    }
+    2%{
+        margin-top: 15px;
+    }
+    7%{
+        margin-top: 12px;
+    }
+    12%{
+        margin-top: 9px;
+    }
+    17%{
+        margin-top: 6px;
+    }
+    22%{
+        margin-top: 3px;
+    }
+    27%{
+        margin-top: 0px;
+    }
+    45%{
+        margin-top: 15px;
+    }
+}
+@keyframes finger3{
+    0%{
+        margin-top: 5px;
+    }
+    10%{
+        margin-top: 5px;
+    }
+    15%{
+        margin-top: 3.5px;
+    }
+    20%{
+        margin-top: 2px;
+    }
+    25%{
+        margin-top: 1.5px;
+    }
+    30%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 5px;
+    }
+}
+@keyframes finger4{
+    0%{
+        margin-top: 10px;
+    }
+    15%{
+        margin-top: 10px;
+    }
+    20%{
+        margin-top: 7.5px;
+    }
+    25%{
+        margin-top: 5px;
+    }
+    30%{
+        margin-top: 2.5px;
+    }
+    35%{
+        margin-top: 0px;
+    }
+    55%{
+        margin-top: 10px;
+    }
+}

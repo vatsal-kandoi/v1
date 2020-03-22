@@ -5,9 +5,41 @@
   <title>Portfolio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="VIT Vatsal Kandoi Developer student">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+<body onload="show">
+  <div class="container-fluid preloader-enc">
+    <div class="preloader">
+      <div class="finger finger-1">
+        <div class="finger-nail nail-1"></div>
+        <i class="crease-1"></i>
+      </div>
+      <div class="finger finger-2">
+        <div class="finger-nail nail-2"></div>
+        <i class="crease-2"></i>
+      </div>
+      <div class="finger finger-3">
+        <div class="finger-nail nail-3"></div>
+        <i class="crease-3"></i>
+      </div>
+      <div class="finger finger-4">
+        <div class="finger-nail nail-4"></div>
+        <i class="crease-4"></i >
+      </div>
+      <div class="thumb-enc">
+        <div class="thumb"></div>
+      </div>
+    </div>
+  </div>
+  <app-root style="display: none;"></app-root>
+  <script>
+    function show() {
+      setTimeout(() => {
+        document.getElementsByClassName('preloader-enc')[0].style.display = 'none';
+        document.getElementsByTagName('app-root')[0].style.display = 'block'
+      }, 10000000);
+    }
+  </script>
 </body>
 </html>
