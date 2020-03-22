@@ -55,10 +55,12 @@
 }
 .icons{
     position: absolute;
-    right: 10px;
+    left: 0px;
+    width: 100%;
     bottom: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     color: black;
 }
 .icon{

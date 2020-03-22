@@ -92,7 +92,7 @@
     align-self: flex-end;
 }
 .experience:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.6);
 }
 @media only screen and (max-width:992px){

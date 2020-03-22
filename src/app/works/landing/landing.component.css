@@ -42,3 +42,9 @@
     transform: scale(1.2);
     color: #21d150;
 }
+
+@media only screen and (max-width:383px){
+    .landing-btn-enclosure{
+        flex-direction: column;
+    }
+}
