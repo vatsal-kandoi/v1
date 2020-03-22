@@ -167,7 +167,7 @@
     border-top-right-radius: 12px;
     animation: nail 1.5s linear infinite;
 }
-i{
+.lines{
     position: absolute;
     top:10px;
     left:6.5px;
