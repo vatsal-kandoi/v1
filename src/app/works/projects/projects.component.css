@@ -41,42 +41,8 @@
     background-color: rgb(228, 228, 228);
     height: 30px;
     width: 30px;
-    transition: width 0.5s linear, height 0.5s 0.5s linear, color 0.1s 1s linear;
 }
-.list{
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s 1s linear;
-    font-weight: bold;
-    margin: 20px;
-    margin-top: 0px;
-    font-size: 0.8rem;    
-}
-.tech-header{
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s 1s linear;
-    font-weight: bold;
-    margin: 20px;
-    font-size: 1.2rem;
-}
-.show-tech:hover{
-    height: 250px;
-    width: 220px;
-    color: black;
-}
-.show-tech:hover .tech-header{
-    visibility: visible;
-    opacity: 1;
-}
-.show-tech:hover .list{
-    visibility: visible;
-    opacity: 1;
-}
-.project-show-tech-active{
-    height: 230px;
-    width: 220px;
-}
+
 .show-tech::after{
     content: ' ';
     height: 15px;
