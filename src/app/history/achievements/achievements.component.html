@@ -1,93 +1,28 @@
 <div class="container-fluid" style="text-align: center;">
     <span class="header">achievements</span>
     <div class="awards">
-        <div class="award">
+        <div class="award" *ngFor="let award of awards">
             <div class="date">
-                March 2019
+                {{ award.date }}
             </div>
             <div class="name">
-                Viking
+                {{ award.name }}
             </div>
             <div class="for">
-                Team UAV
+                {{ award.for }}
             </div>
             <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
+                {{ award.about }}
             </div>
             <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
+                <a class="icon" [ngClass]="{'hide':award.code == ''}" href="{{ award.code }}">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="" class="icon" [ngClass]="{'hide':award.code == ''}" href="{{ award.brochure }}">
+                    <i class="fas fa-download"></i>
+                </a>
             </div>
-        </div>
-        <div class="award">
-            <div class="date">
-                March 2019
-            </div>
-            <div class="name">
-                Viking
-            </div>
-            <div class="for">
-                Team UAV
-            </div>
-            <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
-            </div>
-            <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
-            </div>
-        </div>
-        <div class="award">
-            <div class="date">
-                March 2019
-            </div>
-            <div class="name">
-                Viking
-            </div>
-            <div class="for">
-                Team UAV
-            </div>
-            <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
-            </div>
-            <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
-            </div>
-        </div>
-        <div class="award">
-            <div class="date">
-                March 2019
-            </div>
-            <div class="name">
-                Viking
-            </div>
-            <div class="for">
-                Team UAV
-            </div>
-            <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
-            </div>
-            <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
-            </div>
+    
         </div>
 
     </div>

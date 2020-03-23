@@ -34,7 +34,7 @@
     font-size: 2rem;
     z-index: 3;
     color: white;
-    border-radius: 50%;
+    border-radius: 30px;
     display: flex;
     background-color: #21d150;
     align-items: center;
@@ -119,5 +119,21 @@
     }
     .date-exp{
         align-self: flex-start;
+    }
+}
+@media only screen and (max-width:575px) {
+    .timeline{
+        width: 30%;
+    }
+    .experience-enc{
+        width: 65%;
+    }
+}
+@media only screen and (max-width:375px) {
+    .timeline{
+        width: 25%;
+    }
+    .experience-enc{
+        width: 75%;
     }
 }

@@ -3,38 +3,21 @@
         education
     </span>
     <div class="row">
-        <div class="education col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
+        <div class="education col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1" *ngFor="let education of educations">
             <div class="about">
                 <div class="place">
-                    <div class="name">Vellore Institute of Technology</div>
-                    <div class="city">Vellore</div>
+                    <div class="name">{{ education.name }}</div>
+                    <div class="city">{{ education.city }}</div>
                 </div>
                 <div class="date">
-                    July 2017 - Present
+                    {{ education.date }}
                 </div>
             </div>
             <div class="degree">
-                Electronics and Communication Engineering
+                {{ education.degree }}
             </div>
             <div class="info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus fugit id iusto esse eius, adipisci officiis. Suscipit, reiciendis beatae, cumque recusandae quae, assumenda doloremque debitis rem dolorem maiores voluptas.
-            </div>
-        </div>
-        <div class="education col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
-            <div class="about">
-                <div class="place">
-                    <div class="name">Vellore Institute of Technology</div>
-                    <div class="city">Vellore</div>
-                </div>
-                <div class="date">
-                    July 2017 - Present
-                </div>
-            </div>
-            <div class="degree">
-                Electronics and Communication Engineering
-            </div>
-            <div class="info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus fugit id iusto esse eius, adipisci officiis. Suscipit, reiciendis beatae, cumque recusandae quae, assumenda doloremque debitis rem dolorem maiores voluptas.
+                {{ education.info }}
             </div>
         </div>
     </div>

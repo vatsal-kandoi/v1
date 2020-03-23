@@ -21,6 +21,9 @@
     transition-duration: 0.25s;
     transition-timing-function: ease-out;
 }
+.hide{
+    display: none;
+}
 .project:hover{
     transform: scale(1.01);
     border-bottom-style: solid;

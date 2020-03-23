@@ -3,78 +3,30 @@
         my past projects
     </span>
     <div class="container projects">
-        <div class="project">
+        <div class="project" *ngFor="let project of projects">
             <div class="show-tech">
             </div>
             <div class="date">
-                March 2019
+                {{ project.date }}
             </div>
             <div class="name">
-                Viking
+                {{ project.name }}
             </div>
             <div class="for">
-                Team UAV
+                {{ project.for }}
             </div>
             <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
+                {{ project.about }}
             </div>
-            <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="show-tech">
-            </div>
-            <div class="date">
-                March 2019
-            </div>
-            <div class="name">
-                Viking
-            </div>
-            <div class="for">
-                Team UAV
-            </div>
-            <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
-            </div>
-            <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="show-tech">
-            </div>
-            <div class="date">
-                March 2019
-            </div>
-            <div class="name">
-                Viking
-            </div>
-            <div class="for">
-                Team UAV
-            </div>
-            <div class="about">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quis veritatis dolorem, accusantiu
-            </div>
-            <div class="icons">
-                    <a class="icon" href="">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="" class="icon">
-                        <i class="fas fa-download"></i>
-                    </a>
-            </div>
-        </div>
 
+            <div class="icons">
+                    <a class="icon" [ngClass]="{'hide':project.code == ''}" href="{{ project.code }}">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="" class="icon" [ngClass]="{'hide':project.code == ''}" href="{{ project.brochure }}">
+                        <i class="fas fa-download"></i>
+                    </a>
+            </div>
+        </div>
     </div>
 </div>

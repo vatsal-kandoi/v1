@@ -3,16 +3,8 @@
         a few of my skills
     </span>
     <div class="container info">
-        <div class="skill">JavaScript</div>
-        <div class="skill">Python</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">C</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Angular</div>
-        <div class="skill">Raspberry Pi</div>
-        <div class="skill">Arduino</div>
-        <div class="skill">Unmanned Aerial Vehicles</div>
-        <div class="skill">Aviation Systems</div>
+        <div class="skill" *ngFor="let skill of skills">
+            {{ skill }}
+        </div>
     </div>
 </div>

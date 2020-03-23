@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private data: DataService) {
+    this.skills = data.getSkills();
+  }
+  skills: string[];
   ngOnInit(): void {
   }
 
