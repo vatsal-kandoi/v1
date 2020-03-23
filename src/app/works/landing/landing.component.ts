@@ -11,5 +11,8 @@ export class LandingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  scroll() {
+    document.body.scrollTop = document.getElementById('about').scrollHeight+50;
+    document.documentElement.scrollTop = document.getElementById('about').scrollHeight+50;
+  }
 }

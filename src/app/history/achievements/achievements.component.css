@@ -71,3 +71,6 @@
 .icon:hover{
     color: #21d150 !important;
 }
+.hide{
+    display: none;
+}
