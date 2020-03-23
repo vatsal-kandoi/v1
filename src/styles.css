@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    scroll-behavior: smooth;
+}
 .container-fluid{
     padding-top: 30px ;
     padding-bottom: 30px ;

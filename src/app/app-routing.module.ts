@@ -7,8 +7,8 @@ import { HistoryComponent } from './history/history.component';
 const routes: Routes = [
   { path: '', component: WorksComponent },
   { path: 'education', component: HistoryComponent },
-  { path: '',
-    redirectTo: '/heroes',
+  { path: '**',
+    redirectTo: '/',
     pathMatch: 'full'
   },
 ];

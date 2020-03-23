@@ -13,26 +13,32 @@ export class DataService {
       company: 'Crio Launch',
       position: 'Developer',
       date: '03/2020 - 04/2020',
-      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid nobis sequi fugiat soluta officiis beatae sunt harum alias aperiam, ullam molestiae aut iste maiores dolorum animi eveniet quis voluptate.'
+      info: 'Crio Launch is a program by Crio.Do that teaches developers about the basics of Linux, shell scripting, file systems and Java programming. I was a part of this program and successfully completed the given milestones'
     },
     {
-      company: 'Crio Launch',
-      position: 'Developer',
+      company: 'VIT Linux Users Group',
+      position: 'Co-founder',
       date: '03/2020 - 04/2020',
-      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid nobis sequi fugiat soluta officiis beatae sunt harum alias aperiam, ullam molestiae aut iste maiores dolorum animi eveniet quis voluptate.'
+      info: 'VIT Linux Users Group is a club which teaches the basics concepts behind linux to linux ehtusiasts, and encouragees people to contribute to open source.'
     },
     {
-      company: 'Crio Launch',
-      position: 'Developer',
+      company: 'Team UAV',
+      position: 'Avionics Head',
       date: '03/2020 - 04/2020',
-      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid nobis sequi fugiat soluta officiis beatae sunt harum alias aperiam, ullam molestiae aut iste maiores dolorum animi eveniet quis voluptate.'
+      info: 'Team UAV is a part of Creation Labs, a makerspace in VIT University, Vellore. I am responsible for the avionics division, comprising of both software, and hardware aspects of an autonomous unmanned aerial vehicle '
     },
     {
-      company: 'Crio Launch',
-      position: 'Developer',
+      company: 'ACM VIT',
+      position: 'Web Developer',
       date: '03/2020 - 04/2020',
-      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid nobis sequi fugiat soluta officiis beatae sunt harum alias aperiam, ullam molestiae aut iste maiores dolorum animi eveniet quis voluptate.'
-    }
+      info: 'ACM VIT Student Chapter is the official chapter for ACM in VIT University, Vellore. I was part of the web department, focusing mainly on backend developement using Node.js'
+    },
+    {
+      company: 'Team UAV',
+      position: 'Avionics Division',
+      date: '03/2020 - 04/2020',
+      info: 'Team UAV is a part of Creation Labs, a makerspace in VIT University, Vellore. I was a part of the avionics division, and responsible for creating software and hardware solutions for the existing projects of our team.'
+    },
   ];
   private educations: Education[] = [
     {
@@ -41,6 +47,13 @@ export class DataService {
       city: 'Vellore',
       info: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, quos! Laborum molestias iure rerum architecto beatae tempora quidem ex tenetur asperiores, repudiandae, itaque accusamus dolorum dolor ab voluptas tempore optio.',
       degree: 'Electronics and Communication Engineering'
+    },
+    {
+      date: 'July 2017 - Present',
+      name: 'Lakshmipat Singhania Academy, Kolkata',
+      city: 'Kolkata',
+      info: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, quos! Laborum molestias iure rerum architecto beatae tempora quidem ex tenetur asperiores, repudiandae, itaque accusamus dolorum dolor ab voluptas tempore optio.',
+      degree: 'Higher Secondary'
     }
   ];
   private skills: string[] = [

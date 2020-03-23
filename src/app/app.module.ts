@@ -16,6 +16,7 @@ import { AchievementsComponent } from './history/achievements/achievements.compo
 import { HistoryComponent } from './history/history.component';
 import { EducationComponent } from './history/education/education.component';
 
+
 @NgModule({
   declarations: [
     EducationComponent,
