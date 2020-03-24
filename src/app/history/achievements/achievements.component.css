@@ -33,10 +33,11 @@
 }
 .name{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 20px;
     margin-top: 10px;
     max-width: 210px;
+    text-align: left;
 }
 .for{
     margin-left: 20px;

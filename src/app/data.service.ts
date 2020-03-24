@@ -12,31 +12,31 @@ export class DataService {
     {
       company: 'Crio Launch',
       position: 'Developer',
-      date: '03/2020 - 04/2020',
+      date: '03/2020 - Present',
       info: 'Crio Launch is a program by Crio.Do that teaches developers about the basics of Linux, shell scripting, file systems and Java programming. I was a part of this program and successfully completed the given milestones'
     },
     {
       company: 'VIT Linux Users Group',
       position: 'Co-founder',
-      date: '03/2020 - 04/2020',
+      date: '08/2019 - Present',
       info: 'VIT Linux Users Group is a club which teaches the basics concepts behind linux to linux ehtusiasts, and encouragees people to contribute to open source.'
     },
     {
       company: 'Team UAV',
       position: 'Avionics Head',
-      date: '03/2020 - 04/2020',
+      date: '12/2019 - Present',
       info: 'Team UAV is a part of Creation Labs, a makerspace in VIT University, Vellore. I am responsible for the avionics division, comprising of both software, and hardware aspects of an autonomous unmanned aerial vehicle '
     },
     {
       company: 'ACM VIT',
       position: 'Web Developer',
-      date: '03/2020 - 04/2020',
+      date: '12/2017 - 07/2019',
       info: 'ACM VIT Student Chapter is the official chapter for ACM in VIT University, Vellore. I was part of the web department, focusing mainly on backend developement using Node.js'
     },
     {
       company: 'Team UAV',
       position: 'Avionics Division',
-      date: '03/2020 - 04/2020',
+      date: '12/2018 - 12/2019',
       info: 'Team UAV is a part of Creation Labs, a makerspace in VIT University, Vellore. I was a part of the avionics division, and responsible for creating software and hardware solutions for the existing projects of our team.'
     },
   ];
@@ -45,14 +45,14 @@ export class DataService {
       date: 'July 2017 - Present',
       name: 'Vellore Institute of Technology',
       city: 'Vellore',
-      info: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, quos! Laborum molestias iure rerum architecto beatae tempora quidem ex tenetur asperiores, repudiandae, itaque accusamus dolorum dolor ab voluptas tempore optio.',
+      info: 'Vellore Institute of Technology (VIT University) is a private higher education institute, and Institution of Eminence, located in Vellore, Tamil Nadu. Founded in 1984, the institution offers 20 undergraduate, 34 postgraduate, four integrated and four research programs.',
       degree: 'Electronics and Communication Engineering'
     },
     {
-      date: 'July 2017 - Present',
+      date: 'April 2003 - May 2017',
       name: 'Lakshmipat Singhania Academy, Kolkata',
       city: 'Kolkata',
-      info: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, quos! Laborum molestias iure rerum architecto beatae tempora quidem ex tenetur asperiores, repudiandae, itaque accusamus dolorum dolor ab voluptas tempore optio.',
+      info: 'Lakshmipat Singhania Academy, Kolkata is a school run by Lakshmipat Singhania Education Foundation, a subsidiary of the J.K. Group. The school was founded in 1996, and offers schooling from pre-schools upto the 12th grade. The school is affiliated to the Central Board of Secondary Education',
       degree: 'Higher Secondary'
     }
   ];
@@ -81,10 +81,34 @@ export class DataService {
   ];
   private awards: Awards[] = [
     {
-      date: 'March 2020',
-      name: 'Viking',
-      for: 'Team UAV',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta beatae architecto nemo',
+      date: 'October 2019',
+      name: 'DevJams 2019',
+      for: 'Best UI/UX and Zeit Prize',
+      about: 'My team made a website that filters fake and real reviews of products listed on amazon.com to get the correct rating.',
+      code: '',
+      brochure: ''
+    },
+    {
+      date: 'September 2019',
+      name: 'VitHack',
+      for: '1st Prize',
+      about: "VitHack is a hackathon organised as a part of the annual tech fest, Gravitas. My team made a chatbot to answer common FAQs regarding HPE Enterprises' product,  HPE Oneview.",
+      code: '',
+      brochure: ''
+    },
+    {
+      date: 'March 2019',
+      name: 'HackGrid 2019',
+      for: '2nd Prize',
+      about: 'HackGrid is an annual hackathon organised by Apple Developers Group, VIT Unirsity. My team built a web application that helps report crimes dring elections.',
+      code: '',
+      brochure: ''
+    },
+    {
+      date: 'January 2019',
+      name: 'MedTech Challenge',
+      for: '1st Prize',
+      about: 'My teams pitch for a modular bionic arm got selected for a Rs 50,000 start-up grant by my college.',
       code: '',
       brochure: ''
     }

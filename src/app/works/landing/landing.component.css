@@ -11,6 +11,9 @@
 .landing-page-image{
     height: 150px;
 }
+.no-link{
+    text-decoration: none;
+}
 .landing-page-info{
     font-weight: bold;
     font-size:1.2rem;
