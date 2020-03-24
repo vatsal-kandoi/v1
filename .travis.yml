@@ -12,7 +12,7 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod --base-href http://vatsalkandoi.tech/
+  - ng build --prod --base-href https://vatsal-kandoi.github.io/Portfolio/
   - npm run-script create
 deploy:
   provider: pages
