@@ -75,6 +75,7 @@
     font-size: 1.5rem;
     max-width: 60%;
     color: black;
+    text-align: left;
 }
 .position{
     color: rgb(88, 88, 88);
@@ -113,7 +114,7 @@
         font-size: 1.2rem;
     }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:525px){
     .position{
         flex-direction: column;
     }
@@ -135,5 +136,11 @@
     }
     .experience-enc{
         width: 75%;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .company{
+        font-size: 1.1rem;
+        max-width: 80%;
     }
 }
