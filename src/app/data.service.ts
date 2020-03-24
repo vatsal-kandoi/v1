@@ -74,10 +74,43 @@ export class DataService {
       date: 'March 2020',
       name: 'Viking',
       for: 'Team UAV',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta beatae architecto nemo',
+      about: 'Viking is a fully autonomous unmanned aerial vehicle with a maximum takeoff weight of 33kgs. This was built for the Medical Rescue Challenge, Australia.',
       code: '',
       brochure: ''
+    },
+    {
+      date: 'November 2019',
+      name: 'Recruitment Portal-Backend',
+      for: 'VITLUG',
+      about: 'Recruitment portal for VITLUG where one can login and take a quiz based on the domain selected to be a part of the chapter.',
+      code: 'https://github.com/vatsal-kandoi/VITLUG',
+      brochure: ''
+    },
+    {
+      date: 'November 2019',
+      name: 'Signal Denoising using Particle Swarm Optimisation',
+      for: 'Digital Signal Processing Course',
+      about: 'A Particle Swarm based approach to obtaining threshold and level values for discrete wavelet transform',
+      code: 'https://github.com/vatsal-kandoi/PSO',
+      brochure: ''
+    },
+    {
+      date: 'February 2019',
+      name: 'ACM Weekend Labs',
+      for: 'ACM VIT',
+      about: 'It was an initiative taken by ACM VIT Student Chapter to help students hone their technical skills. This was a platform that allowed users to register for a course & attend weekly classes.',
+      code: 'https://github.com/vatsal-kandoi/weekend-lab',
+      brochure: ''
+    },
+    {
+      date: 'November 2018',
+      name: 'Voice Recognition using MATLAB',
+      for: 'Signals and Systems Course',
+      about: 'A simple notes application using Voice Authorization where users can register using their voice as a password. Voice Authorisation was implemented by using Mel Frequency Coefficient Ceptrum',
+      code: 'https://github.com/vatsal-kandoi/Voice-Recognition',
+      brochure: ''
     }
+
   ];
   private awards: Awards[] = [
     {

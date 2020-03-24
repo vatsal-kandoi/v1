@@ -12,7 +12,7 @@
     margin: 10px;
     width: 250px;
     position: relative;
-    height: 250px;
+    height: 275px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -66,10 +66,11 @@
 }
 .name{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     max-width: 210px;
+    text-align: left;
 }
 .for{
     margin-left: 20px;
@@ -78,7 +79,7 @@
     font-weight: bold;
 }
 .about{
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 20px;
     max-width: 210px;
     font-size: 0.8rem;
