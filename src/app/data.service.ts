@@ -45,14 +45,14 @@ export class DataService {
       date: 'July 2017 - Present',
       name: 'Vellore Institute of Technology',
       city: 'Vellore',
-      info: 'Vellore Institute of Technology (VIT University) is a private higher education institute, and Institution of Eminence, located in Vellore, Tamil Nadu. Founded in 1984, the institution offers 20 undergraduate, 34 postgraduate, four integrated and four research programs.',
+      info: 'Vellore Institute of Technology (VIT University) is a private higher education institute, and Institution of Eminence, located in Vellore, Tamil Nadu. I had a wonderful experience here, working on numerous projects, and taking part in loads of competitions, which have helped me grow.',
       degree: 'Electronics and Communication Engineering'
     },
     {
       date: 'April 2003 - May 2017',
       name: 'Lakshmipat Singhania Academy, Kolkata',
       city: 'Kolkata',
-      info: 'Lakshmipat Singhania Academy, Kolkata is a school run by Lakshmipat Singhania Education Foundation, a subsidiary of the J.K. Group. The school was founded in 1996, and offers schooling from pre-schools upto the 12th grade. The school is affiliated to the Central Board of Secondary Education',
+      info: 'Lakshmipat Singhania Academy, Kolkata is a school run by Lakshmipat Singhania Education Foundation, a subsidiary of the J.K. Group. The school was founded in 1996, and offers schooling from pre-schools upto the 12th grade. This school has played a vital part in moulding me to be a better person.',
       degree: 'Higher Secondary'
     }
   ];
